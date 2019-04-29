@@ -1,0 +1,151 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Basics of Django &#8212; Django  documentation</title>
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="&lt;no title&gt;" href="develop-django-blog.html" />
+    <link rel="prev" title="Introduction" href="introduction.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="basics-of-django">
+<h1>Basics of Django<a class="headerlink" href="#basics-of-django" title="Permalink to this headline">¶</a></h1>
+<p>django-admin startproject &lt;your project name&gt;</p>
+<p>django project comes with urls, settings, wsgi, templates (admin). You can extend it with apps.</p>
+<p>django don’t impose file structure and you have complete freedom on choosing the file/folder structure. Its better to keep modules in django apps with meaning ful names obviously.</p>
+<div class="section" id="settings">
+<h2>settings<a class="headerlink" href="#settings" title="Permalink to this headline">¶</a></h2>
+<p>This is where you store all settings related to the project like database type, autentication, template file path, static file path, session storage (either db or file storage), othe third party api keys, etc.</p>
+</div>
+<div class="section" id="wsgi">
+<h2>wsgi<a class="headerlink" href="#wsgi" title="Permalink to this headline">¶</a></h2>
+<p>This stands for Web Server Gateway Interface - That means it is the interface/entry-point between web server and your django project.</p>
+</div>
+<div class="section" id="urls">
+<h2>urls<a class="headerlink" href="#urls" title="Permalink to this headline">¶</a></h2>
+<p>This is where we map url to controller (python functions or classes)</p>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">Django</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Basics of Django</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#settings">settings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#wsgi">wsgi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#urls">urls</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="django-error-log-and-troubleshooting.html">django logging</a></li>
+<li class="toctree-l1"><a class="reference internal" href="django-models.html">Basic django model</a></li>
+<li class="toctree-l1"><a class="reference internal" href="django-models.html#model-functions">Model functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="django-models.html#model-managers">Model managers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="django-models.html#django-model-crud-operations">Django model CRUD operations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="django-models.html#django-signals">Django signals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="django-security.html">Debug=False</a></li>
+<li class="toctree-l1"><a class="reference internal" href="django-security.html#env-variables">ENV variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="django-security.html#never-expose-object-ids">Never expose object IDs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="django-security.html#csrf">CSRF</a></li>
+<li class="toctree-l1"><a class="reference internal" href="django-security.html#captcha">Captcha</a></li>
+<li class="toctree-l1"><a class="reference internal" href="django-urls.html">Django Urls - Basics to advanced tricks with best practices</a></li>
+<li class="toctree-l1"><a class="reference internal" href="django-urls.html#hard-coded-url">1. Hard coded url</a></li>
+<li class="toctree-l1"><a class="reference internal" href="django-urls.html#regex-pattern-matching">2. Regex pattern matching</a></li>
+<li class="toctree-l1"><a class="reference internal" href="django-urls.html#django-named-urls">Django Named urls</a></li>
+<li class="toctree-l1"><a class="reference internal" href="django-views.html">django decorators</a></li>
+<li class="toctree-l1"><a class="reference internal" href="setup-and-configure.html">django setup and configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="setup-and-configure.html#basic-thumb-rules">Basic thumb rules</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="introduction.html" title="previous chapter">Introduction</a></li>
+      <li>Next: <a href="develop-django-blog.html" title="next chapter">&lt;no title&gt;</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019, MicroPyramid.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/django-the-complete-tutorial/basics-of-django.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
